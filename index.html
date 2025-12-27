@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dimensionamento de Pré-Tratamento – Allca</title>
+</head>
+
+<body style="font-family: Arial; max-width: 760px; margin: auto; padding: 20px;">
+
+  <h1>Dimensionamento de Pré-Tratamento</h1>
+  <p>Simulador de consumo e dimensionamento de pré-tratamento de água – Allca</p>
+
+  <label>Autoclaves (qtd)</label><br>
+  <input type="number" id="autoclave" min="0" value="0"><br><br>
+
+  <label>Termodesinfectoras (qtd)</label><br>
+  <input type="number" id="termodes" min="0" value="0"><br><br>
+
+  <label>Pontos de enxágue com pedal (qtd)</label><br>
+  <input type="number" id="pedal" min="0" value="0"><br><br>
+
+  <label>Pontos de enxágue sem pedal (qtd)</label><br>
+  <input type="number" id="sempedal" min="0" value="0"><br><br>
+
+  <label>Lavagem de mãos CCIH (qtd)</label><br>
+  <input type="number" id="ccih" min="0" value="0"><br><br>
+
+  <label>Máquinas 0,5 L/min (qtd)</label><br>
+  <input type="number" id="maquinas" min="0" value="0"><br><br>
+
+  <label>Condutividade (µS/cm) – opcional</label><br>
+  <input type="number" id="cond" placeholder="Ex: 450"><br><br>
+
+  <button onclick="calcular()" style="padding:10px 18px;font-size:16px;">
+    Calcular
+  </button>
+
+  <div id="resultado" style="margin-top:20px; padding:12px; border:1px solid #ccc;"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
